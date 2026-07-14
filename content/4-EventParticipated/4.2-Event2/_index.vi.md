@@ -1,213 +1,117 @@
 ---
 title: "Event 2"
-date: 2026-06-27
-weight: 4
+date: 2026-06-06
+weight: 2
 chapter: false
 pre: " <b> 4.2. </b> "
 ---
 
-# Bài Thu Hoạch: FCAJ COMMUNITY DAY - "DATA DRIVEN, AI RISEN"
+# Bài thu hoạch "FCAJ Community Day 2026"
 
 ### Thông Tin Sự Kiện
 
-| Thông tin | Chi tiết |
-|-----------|----------|
-| **Tên sự kiện** | FCAJ COMMUNITY DAY - "DATA DRIVEN, AI RISEN" |
-| **Thời gian** | 09:00, Thứ Bảy, ngày 27/06/2026 |
-| **Địa điểm** | Tầng 26, tòa nhà Bitexco, số 02 đường Hải Triều, phường Sài Gòn, TP. Hồ Chí Minh |
-| **Vai trò** | Người tham dự |
+- **Tên sự kiện:** FCAJ Community Day 2026
+- **Thời gian:** Thứ Bảy, ngày 06/06/2026
+- **Địa điểm:** Bitexco Financial Tower, Thành phố Hồ Chí Minh
+- **Vai trò trong sự kiện:** Người tham dự
 
----
+### Mục Đích Của Sự Kiện
 
-### Danh Sách Diễn Giả
+FCAJ Community Day tháng 6 được tổ chức nhằm chia sẻ những kiến thức và kinh nghiệm thực tế trong các lĩnh vực Cloud Computing, AI, DevOps, Cyber Security và phát triển phần mềm trên nền tảng AWS. Thông qua các phiên trình bày từ những kỹ sư và diễn giả đang làm việc trong ngành, người tham dự có cơ hội tiếp cận các công nghệ mới, hiểu rõ hơn về cách xây dựng hệ thống trên AWS và định hướng nghề nghiệp trong lĩnh vực công nghệ thông tin.
 
-- **Truong Tran**
-- **Steve Tran**
-- **Trung Vu**
-- **Anh Dang**
-- **Nghi Danh**
-- **Kiet Tran**
-- **Bao Phan**
-- **Nguyen Nguyen**
-- **Toan Nguyen**
+Ngoài việc cập nhật kiến thức chuyên môn, sự kiện còn tạo điều kiện để sinh viên giao lưu với cộng đồng AWS, học hỏi kinh nghiệm từ các dự án thực tế và mở rộng góc nhìn về những kỹ năng cần thiết khi làm việc trong môi trường doanh nghiệp.
 
----
+### Nội Dung Chính
 
-### Chương Trình Sự Kiện
+#### Docker - A Containerization Technology
 
-| Thời gian | Chủ đề |
-|-----------|--------|
-| 09:00 – 09:25 | Deep Response Engine: From Detection to Autonomous Resolution |
-| 09:25 – 09:55 | Voice Agents: Building Human-Like AI Conversations at Scale |
-| 09:55 – 10:20 | AWS DevOps Agent: Your Always-Available Operations Teammate |
-| 10:20 – 10:45 | AI-Powered Productivity: Workforce Planning For Enterprise |
-| 10:45 – 11:30 | Building Secure Private MCP Connection with Amazon QuickSight Q |
+**Diễn giả:** Anh Bảo Huỳnh
 
----
+Chủ đề đầu tiên tập trung vào vấn đề triển khai ứng dụng sao cho ổn định trên nhiều môi trường khác nhau. Virtual Machine truyền thống thường tiêu tốn nhiều tài nguyên vì mỗi máy ảo cần một hệ điều hành riêng, từ đó khiến việc triển khai và mở rộng nhiều ứng dụng trở nên nặng hơn.
 
-### Nội Dung Chi Tiết Từng Phần
+Docker được giới thiệu như một công nghệ containerization giúp đóng gói ứng dụng cùng môi trường chạy vào một container. Nhờ vậy, ứng dụng có thể hoạt động nhất quán trên nhiều môi trường với tinh thần "Build once, Run anywhere". Diễn giả cũng giải thích Docker Image, Docker Container, Dockerfile, các lệnh Docker cơ bản và những ứng dụng phổ biến trong CI/CD, microservices và cloud native development.
 
-#### 1. Deep Response Engine: From Detection to Autonomous Resolution
+Giá trị thực tế của Docker là giúp nhóm phát triển triển khai phần mềm hiệu quả hơn, giảm lỗi do khác biệt môi trường và hỗ trợ tốt hơn cho các workflow phát triển cloud hiện đại.
 
-Phần đầu tiên đặt ra một câu hỏi cốt lõi trong vận hành cloud hiện đại: **điều gì xảy ra sau khi cảnh báo được kích hoạt?** Thay vì dừng lại ở phát hiện sự cố, Deep Response Engine đề xuất mô hình chuyển dịch từ hệ thống phản ứng theo cảnh báo sang hệ thống tự hành theo hành động.
+#### Combining AWS WAF with Machine Learning for Cyber Attack Detection
 
-**Bức tường phức tạp trong vận hành cloud hiện đại:**
-Các hệ thống cloud ngày nay phát sinh hàng nghìn cảnh báo mỗi ngày. Đội vận hành dễ rơi vào tình trạng "alert fatigue" - chìm ngập trong thông báo đến mức không phân biệt được cái nào thực sự nghiêm trọng. Kết quả là thời gian phát hiện (MTTD) và xử lý (MTTR) kéo dài, ảnh hưởng trực tiếp đến trải nghiệm người dùng và doanh thu.
+**Diễn giả:** Anh Lê Hoàng Gia Đại
 
-**Chuyển dịch từ Alert-driven sang Action-driven:**
-Thay vì chỉ cảnh báo và chờ kỹ sư phản ứng, hệ thống Action-driven có khả năng:
-- Phân tích nguyên nhân gốc rễ tự động.
-- Đề xuất hoặc thực thi hành động khắc phục mà không cần can thiệp thủ công.
-- Học hỏi từ các sự cố trước để phản ứng nhanh hơn trong tương lai.
+Chủ đề này nói về hạn chế của các Web Application Firewall truyền thống. Cách phát hiện dựa trên rule có thể bảo vệ hệ thống trước các mẫu tấn công đã biết, nhưng sẽ gặp khó khăn hơn khi đối mặt với các kiểu tấn công mới hoặc hành vi bất thường chưa có trong bộ luật.
 
-**Kiến trúc Deep Response Engine:**
-Hệ thống được xây dựng theo mô hình đa tầng: tầng thu thập dữ liệu (metrics, logs, traces) → tầng phân tích AI → tầng ra quyết định → tầng thực thi hành động tự động. Mỗi tầng hoạt động song song và liên tục để đảm bảo phản ứng trong thời gian thực.
+Giải pháp được trình bày là xây dựng hệ thống Network Intrusion Detection System (NIDS) sử dụng Machine Learning để phân tích lưu lượng mạng và phát hiện hành vi bất thường. Mô hình được huấn luyện bằng bộ dữ liệu CSE-CIC-IDS2018 và triển khai trên AWS với các dịch vụ như Amazon EC2, AWS WAF, Lambda, CloudWatch, Security Hub và Amazon SNS.
 
-**Demo: Tự động xử lý sự cố:**
-Bản demo trực tiếp cho thấy hệ thống phát hiện một dịch vụ bị lỗi, xác định nguyên nhân, thực hiện rollback tự động và thông báo cho đội ngũ - tất cả trong vòng vài giây mà không cần kỹ sư on-call phải thức dậy.
+Qua phần này, tôi hiểu rõ hơn cách Machine Learning có thể bổ sung cho AWS WAF để tăng khả năng phát hiện và cảnh báo tấn công theo thời gian thực. Với doanh nghiệp, hướng tiếp cận này giúp tăng cường bảo mật ứng dụng và giảm rủi ro bỏ sót các hoạt động mạng đáng nghi.
 
-**Tác động kinh doanh:**
-- Giảm đáng kể chi phí vận hành nhờ tự động hóa các tác vụ lặp lại.
-- Đạt được mục tiêu zero-downtime operations thực sự - không chỉ trên giấy tờ.
-- Giải phóng kỹ sư khỏi công việc reactive để tập trung vào cải tiến hệ thống.
+#### Multiplayer in the Cloud: Connecting Godot Clients with AWS WebSockets
 
----
+**Diễn giả:** Anh Nguyễn Quốc Bảo
 
-#### 2. Voice Agents: Building Human-Like AI Conversations at Scale
+Chủ đề thứ ba nói về bài toán xây dựng giao tiếp thời gian thực cho game multiplayer. Các cách giao tiếp như HTTP polling có thể không phù hợp với ứng dụng cần cập nhật hai chiều nhanh giữa nhiều người dùng.
 
-Phần này khám phá sự tiến hóa của giao tiếp giữa người và máy - từ IVR cứng nhắc đến các Voice Agent có khả năng tương tác như người thật.
+Diễn giả giới thiệu kiến trúc multiplayer game sử dụng AWS WebSocket. Hệ thống dùng API Gateway WebSocket kết hợp với AWS Lambda và Amazon DynamoDB để quản lý kết nối giữa người chơi. Lambda xử lý logic kết nối, ghép cặp và đồng bộ dữ liệu, trong khi DynamoDB lưu trạng thái của từng phiên kết nối.
 
-**Hành trình từ IVR đến AI Voice Agent:**
-- **IVR (Interactive Voice Response)**: Menu cứng nhắc, người dùng phải bấm số theo hướng dẫn - trải nghiệm tệ, tỷ lệ từ bỏ cao.
-- **Chatbot văn bản**: Linh hoạt hơn nhưng vẫn thiếu ngữ cảnh và không tự nhiên.
-- **AI Voice Agent**: Nghe, hiểu ngữ cảnh, phản hồi bằng giọng nói tự nhiên và xử lý các tình huống phức tạp theo thời gian thực.
+Giá trị thực tế của kiến trúc này là cho thấy các dịch vụ serverless của AWS có thể hỗ trợ ứng dụng thời gian thực. Nội dung này cũng giúp tôi hiểu WebSocket không chỉ dùng cho game, mà còn có thể áp dụng cho chat, công cụ cộng tác trực tuyến và các ứng dụng tương tác khác.
 
-**Ba thách thức cốt lõi:**
-- **Độ trễ (Latency)**: Người dùng kỳ vọng phản hồi trong vòng 300–500ms. Bất kỳ độ trễ nào lớn hơn đều phá vỡ cảm giác hội thoại tự nhiên.
-- **Độ chính xác (Accuracy)**: Nhận diện giọng nói trong môi trường ồn ào, giọng địa phương, và các thuật ngữ chuyên ngành.
-- **Tương tác tự nhiên (Natural Interaction)**: Xử lý ngắt câu, nói lại, thay đổi chủ đề giữa chừng - những thứ con người làm tự nhiên nhưng máy thường thất bại.
+#### The Art of Effective Teamwork
 
-**Amazon Nova Sonic - Mô hình Speech-to-Speech:**
-Nova Sonic là mô hình nền tảng mới của AWS cho phép xử lý âm thanh đầu vào và sinh ra âm thanh đầu ra trực tiếp, bỏ qua bước chuyển đổi trung gian qua văn bản. Điều này giúp giảm đáng kể độ trễ và giữ được các đặc tính tự nhiên của giọng nói như ngữ điệu, nhịp điệu.
+**Diễn giả:** Anh Trương Huy Phước
 
-**Kiến trúc hệ thống:**
-`Telephony → Streaming Audio → Amazon Nova Sonic → Amazon Bedrock → MCP Tools → Response Audio`
+Bên cạnh các chủ đề kỹ thuật, phần chia sẻ này tập trung vào một vấn đề rất thường gặp trong dự án: công nghệ tốt chưa đủ nếu nhóm thiếu mục tiêu chung, giao tiếp rõ ràng và trách nhiệm cá nhân.
 
-Toàn bộ luồng xử lý được thiết kế để tối thiểu hóa độ trễ ở mỗi bước, với khả năng mở rộng để phục vụ hàng triệu cuộc gọi đồng thời.
+Diễn giả chia sẻ bốn nguyên tắc quan trọng trong làm việc nhóm, gồm xác định mục tiêu chung rõ ràng, phân chia công việc phù hợp với từng thành viên, duy trì giao tiếp hiệu quả và đề cao trách nhiệm cá nhân. Một số công cụ hỗ trợ quản lý công việc cũng được nhắc đến như Trello, ClickUp, Google Workspace, Slack và Discord.
 
-**Ứng dụng doanh nghiệp và demo:**
-Các trường hợp sử dụng thực tế bao gồm: tổng đài khách hàng tự động, đặt lịch hẹn, hỗ trợ kỹ thuật cấp đầu tiên. Bản demo cho thấy một Voice Agent xử lý yêu cầu phức tạp từ khách hàng - hỏi, xác nhận, tra cứu hệ thống và cung cấp câu trả lời - tất cả trong một cuộc hội thoại liên tục.
+Giá trị của chủ đề này rất thực tế với các dự án sinh viên. Nó nhắc tôi rằng một sản phẩm phần mềm thành công không chỉ phụ thuộc vào khả năng lập trình, mà còn phụ thuộc vào sự phối hợp, tinh thần sở hữu công việc và giao tiếp giữa các thành viên.
 
----
+#### Build GraphRAG Applications using Amazon Bedrock and Amazon Neptune
 
-#### 3. AWS DevOps Agent: Your Always-Available Operations Teammate
+**Diễn giả:** Anh Việt Phát
 
-Hãy tưởng tượng có một đồng nghiệp DevOps luôn sẵn sàng 24/7, không bao giờ mệt mỏi, và có kiến thức về toàn bộ hệ thống của bạn - đó chính là AWS DevOps Agent.
+Chủ đề này giới thiệu GraphRAG như một cách cải thiện Retrieval-Augmented Generation khi câu hỏi cần nhiều bước suy luận. RAG truyền thống có thể bị giới hạn nếu chỉ truy xuất các đoạn văn bản mà chưa hiểu mối quan hệ giữa các thực thể.
 
-**Tổng quan AWS DevOps Agent:**
-AWS DevOps Agent là một AI Agent chuyên biệt cho công việc vận hành, được tích hợp sâu vào hệ sinh thái AWS để hỗ trợ kỹ sư trong việc phát hiện, phân tích và xử lý sự cố.
+Diễn giả giải thích cách GraphRAG kết hợp Amazon Bedrock với Amazon Neptune. Amazon Neptune có thể lưu trữ quan hệ giữa các thực thể dưới dạng graph data, còn Amazon Bedrock cung cấp foundation model để hỗ trợ suy luận và tạo câu trả lời. Cách tiếp cận này giúp hệ thống AI sử dụng thông tin có liên kết thay vì chỉ dựa trên tìm kiếm văn bản thông thường.
 
-**Giảm MTTD và MTTR với AI:**
-- **MTTD (Mean Time To Detect)**: Agent liên tục theo dõi metrics, logs, và traces - phát hiện bất thường sớm hơn nhiều so với con người.
-- **MTTR (Mean Time To Resolve)**: Agent đề xuất giải pháp dựa trên lịch sử sự cố và runbook đã được huấn luyện, giúp kỹ sư xử lý nhanh hơn.
+Giá trị thực tế là cải thiện chất lượng câu trả lời cho các ứng dụng AI cần suy luận dựa trên quan hệ dữ liệu. Điều này phù hợp với các hệ thống tri thức, enterprise search và những ứng dụng cần hiểu kết nối giữa nhiều điểm dữ liệu.
 
-**Hỗ trợ môi trường đa cloud và hybrid:**
-Không bị giới hạn trong hệ sinh thái AWS, Agent có thể kết nối và theo dõi workload trên Azure, GCP và on-premises thông qua các connector tích hợp.
+#### From IT Helpdesk to Senior Sysadmin
 
-**Bedrock AgentCore và Multi-Agent Reasoning:**
-Hệ thống sử dụng Amazon Bedrock AgentCore để điều phối nhiều agent chuyên biệt làm việc cùng nhau:
-- Agent phân tích logs.
-- Agent kiểm tra cấu hình.
-- Agent tra cứu runbook.
-- Agent thực thi hành động sửa chữa.
+**Diễn giả:** Anh Trần Trung Vinh
 
-Kết quả được tổng hợp và trình bày cho kỹ sư dưới dạng khuyến nghị có thứ tự ưu tiên.
+Phần chia sẻ cuối tập trung vào phát triển nghề nghiệp, đặc biệt là hành trình từ IT Helpdesk lên Senior System Administrator. Vấn đề được nhấn mạnh là nhiều người học muốn đi nhanh vào Cloud hoặc DevOps nhưng chưa có nền tảng đủ vững về Linux, networking và system administration.
 
-**Demo ECS Walkthrough:**
-Bản demo mô tả tình huống một ECS service bị lỗi: Agent tự phát hiện, phân tích container logs, xác định nguyên nhân là do memory leak, đề xuất tăng memory limit và restart task - tất cả được ghi lại trong audit trail đầy đủ.
+Diễn giả nhấn mạnh tầm quan trọng của việc xây dựng nền tảng kỹ thuật trước khi tiếp cận cloud và DevOps. Anh cũng chia sẻ kinh nghiệm phỏng vấn, xây dựng dự án cá nhân và rèn luyện kỹ năng thực hành. Thông điệp làm tôi chú ý là chứng chỉ có giá trị, nhưng kinh nghiệm thực tế và dự án cá nhân mới là yếu tố giúp ứng viên tạo lợi thế rõ hơn khi ứng tuyển.
 
----
+Giá trị của chủ đề này nằm ở định hướng nghề nghiệp. Nó giúp tôi thấy rằng để phát triển lâu dài trong cloud và DevOps, người học cần liên tục học tập, thực hành và củng cố nền tảng kỹ thuật.
 
-#### 4. AI-Powered Productivity: Workforce Planning For Enterprise
+### Những Gì Học Được
 
-Phần này mang AI vào bài toán quản trị nhân sự - một lĩnh vực truyền thống thường chậm thích nghi với công nghệ mới.
+- Tôi hiểu rõ hơn sự khác biệt giữa Virtual Machine và Docker Container, cũng như vai trò của Docker trong triển khai ứng dụng cloud native.
+- Tôi biết cách AWS WAF có thể kết hợp với Machine Learning để tăng khả năng phát hiện tấn công mạng và nâng cao bảo mật hệ thống.
+- Tôi hiểu kiến trúc xây dựng ứng dụng thời gian thực bằng API Gateway WebSocket, AWS Lambda và Amazon DynamoDB.
+- Tôi nhận ra tầm quan trọng của giao tiếp, phân chia công việc và trách nhiệm cá nhân trong quá trình làm việc nhóm.
+- Tôi có thêm kiến thức về GraphRAG, Amazon Bedrock và Amazon Neptune trong việc phát triển các ứng dụng AI hiện đại.
+- Tôi hiểu rằng học tập liên tục, thực hành trên dự án thực tế và xây dựng nền tảng vững chắc là yếu tố quan trọng để phát triển sự nghiệp trong Cloud Computing và DevOps.
 
-**Thách thức chuyển đổi HR trong doanh nghiệp hiện đại:**
-- Dữ liệu nhân sự phân tán ở nhiều hệ thống khác nhau (HRIS, Excel, email).
-- Lập kế hoạch nhân lực thường dựa trên cảm tính hơn là dữ liệu.
-- Các quy trình thủ công chiếm quá nhiều thời gian của đội HR, ít còn thời gian cho công việc chiến lược.
+### Ứng Dụng Vào Công Việc
 
-**Amazon QuickSight Q và khả năng HR:**
-Amazon QuickSight Q được giới thiệu như một trợ lý AI có khả năng:
-- Trả lời câu hỏi HR bằng ngôn ngữ tự nhiên: "Tỷ lệ nghỉ việc trong quý vừa rồi là bao nhiêu?"
-- Tổng hợp dữ liệu từ nhiều nguồn và sinh ra báo cáo tức thì.
-- Phát hiện xu hướng nhân sự trước khi chúng trở thành vấn đề.
+Kiến thức từ sự kiện này hữu ích cho dự án **AWS Serverless Event Portal** của tôi vì nhiều chủ đề liên quan trực tiếp đến backend services, kiến trúc AWS và cách phối hợp trong project. Phần WebSocket giúp tôi hiểu rõ hơn cách API Gateway, Lambda và DynamoDB có thể hỗ trợ giao tiếp thời gian thực, dù project hiện tại của tôi chưa triển khai multiplayer hoặc live messaging.
 
-**Tăng tốc vận hành HR với tự động hóa:**
-- Tự động hóa quy trình onboarding/offboarding.
-- Tự động nhắc nhở đánh giá hiệu suất đúng hạn.
-- Giảm thời gian xử lý yêu cầu nhân sự từ ngày xuống giờ.
+Chủ đề Docker cũng giúp tôi hiểu vì sao môi trường chạy nhất quán lại quan trọng khi phát triển và triển khai ứng dụng. Trong các cải tiến sau này, kiến thức này có thể hỗ trợ quy trình phát triển backend gọn hơn và giúp chuẩn bị service dễ triển khai hơn.
 
-**Phân tích lực lượng lao động và Data-Driven Insights:**
-Thay vì báo cáo nhìn vào quá khứ, hệ thống cung cấp phân tích dự báo: dự đoán nguy cơ nghỉ việc của nhân viên, xác định khoảng trống kỹ năng trước khi ảnh hưởng đến dự án, và gợi ý chiến lược giữ chân nhân tài.
+Phần bảo mật nhắc tôi rằng ứng dụng web sau khi triển khai cần được bảo vệ và giám sát. Dù tôi chưa xây dựng hệ thống Machine Learning để phát hiện tấn công trong project, nội dung này giúp tôi quan tâm hơn đến AWS WAF, monitoring, cảnh báo và kiến trúc an toàn.
 
-**Lập kế hoạch lực lượng lao động chiến lược:**
-Với dữ liệu đầy đủ và phân tích chính xác, các nhà quản lý có thể đưa ra quyết định thuê người, đào tạo, và phân bổ nguồn lực dựa trên nhu cầu thực tế - thay vì kinh nghiệm thuần túy.
+GraphRAG cũng cho tôi thêm ý tưởng về hướng tích hợp AI trong tương lai. Nếu Event Portal sau này cần tính năng như tìm kiếm tri thức sự kiện hoặc hỗ trợ thông minh hơn, Amazon Bedrock và dữ liệu dạng graph có thể là hướng đáng tìm hiểu, nhưng không có nghĩa là các tính năng này đã được triển khai trong project hiện tại.
 
----
+### Trải nghiệm trong event
 
-#### 5. Building Secure Private MCP Connection with Amazon QuickSight Q
+Điều làm tôi ấn tượng nhất trong sự kiện là sự đa dạng của các chủ đề. Các phần chia sẻ đi từ containerization, bảo mật, ứng dụng thời gian thực đến làm việc nhóm, kiến trúc AI và phát triển nghề nghiệp. Điều này làm cho event khá cân bằng vì vừa có kỹ năng kỹ thuật vừa có góc nhìn phát triển bản thân.
 
-Phần cuối đi sâu vào khía cạnh kỹ thuật và bảo mật của việc mở rộng Amazon QuickSight Q thông qua Model Context Protocol (MCP).
+Tôi đặc biệt thấy phần WebSocket và GraphRAG hữu ích vì chúng gắn các dịch vụ AWS với những tình huống ứng dụng cụ thể. Các ví dụ này giúp tôi thấy cách API Gateway, Lambda, DynamoDB, Bedrock và Neptune có thể phối hợp tùy theo bài toán cần giải quyết.
 
-**Amazon QuickSight Q như một nền tảng AI assistant:**
-QuickSight Q không chỉ là công cụ phân tích dữ liệu - với MCP, nó trở thành một nền tảng có thể kết nối và tương tác với bất kỳ hệ thống nào trong doanh nghiệp.
+Phần chia sẻ nghề nghiệp cũng tạo thêm động lực để tôi tiếp tục củng cố nền tảng. Sau sự kiện, tôi cảm thấy việc học AWS nên đi cùng với thực hành Linux, networking, system administration, kỹ năng làm việc nhóm và xây dựng dự án thực tế.
 
-**MCP (Model Context Protocol) là gì?**
-MCP là giao thức chuẩn hóa cho phép AI model kết nối với các nguồn dữ liệu và công cụ bên ngoài theo cách có kiểm soát. Thay vì hardcode từng integration, MCP cung cấp một "ngôn ngữ chung" để AI có thể mở rộng khả năng một cách linh hoạt.
+#### Một số hình ảnh khi tham gia sự kiện
 
-**Thách thức bảo mật trong tích hợp MCP:**
-- MCP server mặc định expose qua internet - rủi ro khi chứa dữ liệu nhạy cảm doanh nghiệp.
-- Xác thực và phân quyền truy cập phức tạp khi có nhiều nguồn dữ liệu.
-- Nguy cơ data exfiltration nếu không có kiểm soát chặt chẽ.
+![Ảnh tham gia FCAJ Community Day 2026](/images/event2.jpg)
 
-**Cấu hình Amazon QuickSight Q VPC Private Connectivity:**
-Giải pháp được đề xuất sử dụng VPC Private Endpoint để toàn bộ traffic giữa QuickSight Q và MCP server chạy trong mạng nội bộ AWS, không ra internet. Các bước triển khai:
-1. Tạo VPC và cấu hình Security Group cho MCP server.
-2. Thiết lập VPC Endpoint cho QuickSight Q.
-3. Cấu hình IAM roles với quyền tối thiểu cần thiết.
-4. Kiểm tra kết nối và audit logs.
-
-**Demo và insights thực tế:**
-Bản demo cho thấy một QuickSight Q agent kết nối với internal database qua VPC private link, thực hiện truy vấn và trả kết quả - không có traffic nào đi ra ngoài internet. Phần Q&A cuối buổi chia sẻ các gotchas thường gặp khi triển khai thực tế.
-
----
-
-### Bài Học Rút Ra
-
-#### Về xu hướng AI trong vận hành hệ thống
-- **Tự động hóa phản ứng sự cố** không còn là tương lai - nó đang được triển khai trong production của các tổ chức lớn. MTTD và MTTR là hai chỉ số cần theo dõi và cải thiện liên tục.
-- **AI Agent không thay thế kỹ sư** - nó giải phóng kỹ sư khỏi công việc reactive lặp đi lặp lại để tập trung vào cải tiến kiến trúc và chiến lược.
-- **Multi-agent reasoning** là kiến trúc phù hợp cho bài toán phức tạp: mỗi agent chuyên một việc, kết hợp lại để giải quyết vấn đề lớn hơn khả năng của bất kỳ single agent nào.
-
-#### Về Voice AI và trải nghiệm người dùng
-- Độ trễ dưới 500ms là yêu cầu bắt buộc cho Voice Agent - không đạt được ngưỡng này thì trải nghiệm sẽ không tự nhiên dù AI có thông minh đến đâu.
-- **Speech-to-speech model** (như Amazon Nova Sonic) là bước tiến quan trọng - bỏ qua bước trung gian qua text giúp giảm độ trễ và giữ được chất lượng âm thanh tự nhiên.
-
-#### Về bảo mật và kiến trúc doanh nghiệp
-- **MCP + VPC Private Connectivity** là pattern chuẩn để mở rộng AI assistant một cách an toàn trong môi trường doanh nghiệp.
-- Bảo mật phải được thiết kế từ đầu - không phải thêm vào sau. "Security by design" không chỉ là khẩu hiệu mà là yêu cầu thực tế khi AI truy cập dữ liệu nhạy cảm.
-
----
-
-### Cảm Nhận Của Bản Thân
-
-Workshop lần này có mật độ kỹ thuật cao hơn hẳn các event trước - từ kiến trúc Deep Response Engine cho đến cấu hình VPC private MCP, mỗi phần đều yêu cầu nền tảng kỹ thuật nhất định để theo kịp.
-
-Điều mình ấn tượng nhất là sợi chỉ đỏ xuyên suốt tất cả các phần: **AI không chỉ để trả lời câu hỏi, mà để hành động**. Dù là tự xử lý sự cố, tự phân tích giọng nói, tự lập kế hoạch nhân sự hay tự kết nối hệ thống - tất cả đều hướng đến mô hình AI có khả năng làm thay thế con người ở những tác vụ lặp lại và tốn thời gian nhất.
-
----
-
-### Hình Ảnh Sự Kiện
-
-![AWS First Cloud AI Journey Workshop](/images/event4.jpg)
+> Tổng thể, sự kiện giúp tôi kết nối các kiến thức về AWS cloud services, AI, bảo mật, làm việc nhóm và định hướng nghề nghiệp theo hướng thực tế hơn.
