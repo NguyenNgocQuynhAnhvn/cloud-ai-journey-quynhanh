@@ -6,47 +6,44 @@ chapter: false
 pre: " <b> 1.5. </b> "
 ---
 
-> **Duration:** 18/05/2026 - 24/05/2026 AI/ML with Amazon SageMaker
+
+**Weekly Objectives**
+
+- Master the use of Amazon SageMaker throughout the entire machine learning lifecycle, from model development and training to deployment.
+- Learn how to integrate pre-trained AWS AI services into applications without requiring in-depth knowledge of machine learning algorithms.
+- Understand how to professionally manage the lifecycle of a Machine Learning project on the AWS Cloud.
 
 ---
 
-### Weekly Objectives
+**Tasks to be completed this week**
 
-- Master the use of Amazon SageMaker to build, train, and deploy machine learning models through an end-to-end workflow.
-- Learn how to integrate AWS pre-trained AI services into applications without requiring in-depth expertise in machine learning algorithms.
-- Understand how to professionally manage the lifecycle of a machine learning project on the AWS Cloud.
+| Day | Tasks | Date |
+|---|---|---|
+| **Monday** | Study Amazon SageMaker and the Machine Learning lifecycle. Set up a development environment using SageMaker Studio or SageMaker Notebook Instances for data analytics and machine learning projects. | May 18 |
+| **Tuesday** | Practice the **Data Preparation** and **Build** phases of the SageMaker Immersion Day workshop, including loading data from Amazon S3, preprocessing, feature engineering, and building machine learning models in Jupyter Notebook. | May 19 |
+| **Wednesday** | Train machine learning models using Amazon SageMaker Training Jobs and perform Hyperparameter Tuning to automatically optimize model parameters and improve model performance. | May 20 |
+| **Thursday** | Deploy trained models as Amazon SageMaker Inference Endpoints, test real-time predictions through REST APIs, and monitor model performance after deployment. | May 21 |
+| **Friday** | Explore and practice integrating AWS AI Services by using APIs for image recognition, sentiment analysis, and language translation to enhance application capabilities with AI features. | May 22 |
 
----
 
-### Learning Contents
+**Weekly Results**
 
-#### 1. Core Components of Machine Learning with Amazon SageMaker
+- **Monday:**
+  - **Achievement:** Developed a solid understanding of the AWS Machine Learning ecosystem and successfully provisioned a notebook environment ready for model development and training.
+  - **Lesson Learned:** Using managed services such as Amazon SageMaker significantly reduces the complexity of managing underlying compute infrastructure, including CPU and GPU resources.
 
-- **Machine Learning with Amazon SageMaker:** Gain an overview of the core components of Amazon SageMaker and understand why it is one of the leading platforms for data scientists and machine learning engineers.
-- **SageMaker Immersion Day:** Practice the complete end-to-end machine learning pipeline.
-  + **Data Preparation:** Learn how to collect, clean, and transform raw data (typically stored in Amazon S3) into formats suitable for machine learning models.
-  + **Build:** Use development environments such as Jupyter Notebooks in Amazon SageMaker to write code, explore datasets, and select appropriate machine learning algorithms.
-  + **Train:** Configure high-performance CPU and GPU instances to train machine learning models at scale using only a few commands or through the AWS Management Console.
-  + **Tune:** Learn how to use Hyperparameter Tuning to automatically identify the optimal hyperparameter configuration and improve model performance.
-  + **Deploy:** Deploy trained models by creating real-time inference endpoints, allowing external applications to send prediction requests through APIs.
+- **Tuesday:**
+  - **Achievement:** Successfully prepared a clean dataset for model training and became proficient in using SageMaker Studio to manage code, notebooks, and datasets efficiently.
+  - **Lesson Learned:** Data preparation typically consumes the largest portion of a machine learning project, but it is also one of the most critical factors influencing model quality and prediction accuracy.
 
-#### 2. AI Services Integration
+- **Wednesday:**
+  - **Achievement:** Successfully trained machine learning models and identified optimal hyperparameter configurations through automated tuning without requiring extensive manual experimentation.
+  - **Lesson Learned:** Automated hyperparameter optimization saves considerable time and helps discover model configurations that might be overlooked through manual trial-and-error.
 
-- **AWS AI Services Integration:** Learn how to integrate AWS AI service APIs to add intelligent capabilities to applications, including:
-  + Image and video recognition.
-  + Text sentiment analysis and information extraction.
-  + Language translation and speech processing.
-  + Time-series forecasting without building machine learning models from scratch.
+- **Thursday:**
+  - **Achievement:** Successfully deployed a trained machine learning model as a production-ready web service capable of providing real-time predictions for external applications.
+  - **Lesson Learned:** Moving a model from research to production requires not only model development skills but also expertise in model packaging, endpoint management, and production deployment to ensure reliable service availability.
 
----
-
-### Key Takeaways
-
-- **Understanding the complete machine learning lifecycle:** Building a machine learning model involves much more than model training. A successful ML workflow includes data preparation, model training, evaluation, deployment, and continuous monitoring in production.
-- **Understanding the benefits of Amazon SageMaker for AI/ML development:** Amazon SageMaker simplifies the process of building, training, and deploying machine learning models on scalable cloud infrastructure. This enables developers to work with large datasets and computationally intensive workloads without relying on the capabilities of local machines.
-- **Selecting the right AI solution for different use cases:** Custom machine learning models can be developed with Amazon SageMaker for domain-specific problems, while AWS pre-trained AI services provide ready-to-use intelligent capabilities that significantly reduce development time and resource requirements for common AI tasks.
-- **Understanding the model deployment process:** After a model has been trained and evaluated, it can be deployed as a real-time inference endpoint, allowing applications to access prediction services through APIs. This provides practical experience with moving machine learning models from development into production.
-
----
-
-*Source: [First Cloud Journey - AWS Study Group](https://cloudjourney.awsstudygroup.com/)*
+- **Friday:**
+  - **Achievement:** Gained hands-on experience with AWS AI Services and learned to distinguish when to use Amazon SageMaker versus AWS's pre-trained AI services based on different application requirements.
+  - **Lesson Learned:** Leveraging pre-built AWS AI services accelerates application development and reduces maintenance costs compared with building and maintaining custom machine learning models from scratch.

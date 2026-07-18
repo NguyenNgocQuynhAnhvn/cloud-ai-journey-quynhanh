@@ -12,26 +12,17 @@ Chương trình kéo dài khoảng **3 tháng** (20/04 – 15/07/2026), bao gồ
 
 ---
 
-**Tuần 1**: [Nền tảng Cloud và thiết lập môi trường an toàn](1.1-Week1/)
-
-**Tuần 2**: [Quản trị cơ sở dữ liệu và di chuyển dữ liệu](1.2-Week2/)
-
-**Tuần 3**: [Xây dựng Data Lake và Data Engineering](1.3-Week3/)
-
-**Tuần 4**: [Phân tích dữ liệu và Business Intelligence (BI)](1.4-Week4/)
-
-**Tuần 5**: [Ứng dụng AI/ML với Amazon SageMaker](1.5-Week5/)
-
-**Tuần 6**: [Tối ưu hóa, bảo mật và vận hành Hệ thống MLOps](1.6-Week6/)
-
-**Tuần 7**: [Nghiên cứu bài toán Customer Behavior Analytics và xây dựng Architecture ](1.7-Week7/)
-
-**Tuần 8**: [Triển khai tầng Ingestion Layer cho hệ thống Data Lakehouse](1.8-Week8/)
-
-**Tuần 9**: [Triển khai Bronze Layer, Silver Layer, Gold Layer trong kiến trúc Medallion Data Lakehouse.](1.9-Week9/)
-
-**Tuần 10**: [Triển khai Query Layer và Dashboard cho hệ thống Data Lakehouse](1.10-Week10/)
-
-**Tuần 11**: [ Hoàn thiện và kiểm thử hệ thống Customer Behavior Analytics End-to-End](1.11-Week11/)
-
-**Tuần 12**: [Hoàn thiện, tối ưu và nghiệm thu hệ thống Customer Behavior Analytics trên AWS](1.12-Week12/)
+| Tuần | Khoảng thời gian | Nội dung tập trung |
+|------|-----------------|-------------------|
+| [**Tuần 1**](1.1-Week1/) | 20/4 - 26/4 | Nền tảng Cloud, thiết lập môi trường AWS, cấu hình IAM, quản lý chi phí và xây dựng hạ tầng an toàn |
+| [**Tuần 2**](1.2-Week2/) | 27/4 - 3/5 | Quản trị cơ sở dữ liệu trên AWS, Amazon RDS, sao lưu và di chuyển dữ liệu |
+| [**Tuần 3**](1.3-Week3/) | 4/5 - 10/5 | Xây dựng Data Lake trên Amazon S3, AWS Glue Data Catalog và quy trình Data Engineering |
+| [**Tuần 4**](1.4-Week4/) | 11/5 - 17/5 | Phân tích dữ liệu với Amazon Athena, trực quan hóa bằng Amazon QuickSight và Business Intelligence (BI) |
+| [**Tuần 5**](1.5-Week5/) | 18/5 - 24/5 | Ứng dụng AI/ML với Amazon SageMaker, huấn luyện, triển khai và đánh giá mô hình Machine Learning |
+| [**Tuần 6**](1.6-Week6/) | 25/5 - 31/5 | Tối ưu chi phí, bảo mật hệ thống, Infrastructure as Code (IaC), CI/CD và MLOps |
+| [**Tuần 7**](1.7-Week7/) | 1/6 - 7/6 | Nghiên cứu bài toán Customer Behavior Analytics, khảo sát dữ liệu và thiết kế kiến trúc Medallion Data Lakehouse |
+| [**Tuần 8**](1.8-Week8/) | 8/6 - 14/6 | Triển khai Ingestion Layer với API Gateway, Lambda, Kinesis Firehose và EventBridge Scheduler, lưu trữ dữ liệu vào Raw Layer trên Amazon S3 |
+| [**Tuần 9**](1.9-Week9/) | 15/6 - 21/6 | Xây dựng Bronze Layer, Silver Layer và Gold Layer bằng AWS Glue ETL, chuyển đổi dữ liệu sang Parquet và quản lý metadata với Glue Data Catalog |
+| [**Tuần 10**](1.10-Week10/) | 22/6 - 28/6 | Triển khai Query Layer với Amazon Athena, xây dựng Dashboard bằng Streamlit và triển khai trên Amazon EC2 |
+| [**Tuần 11**](1.11-Week11/) | 29/6 - 5/7 | Kiểm thử tích hợp toàn bộ hệ thống Customer Behavior Analytics End-to-End, xác thực dữ liệu và tối ưu quy trình xử lý |
+| [**Tuần 12**](1.12-Week12/) | 6/7 - 12/7 | Hoàn thiện, tối ưu hiệu năng, hoàn thiện tài liệu kỹ thuật và nghiệm thu hệ thống Customer Behavior Analytics trên AWS |

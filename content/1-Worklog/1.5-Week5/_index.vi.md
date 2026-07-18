@@ -6,11 +6,8 @@ chapter: false
 pre: " <b> 1.5. </b> "
 ---
 
-> **Thời gian:** 18/05/2026 - 24/05/2026 Ứng dụng AI/ML với Amazon SageMaker
 
----
-
-### Mục tiêu trong tuần
+**Mục tiêu trong tuần**
 
 - Nắm vững cách sử dụng Amazon SageMaker để thực hiện toàn bộ quy trình từ xây dựng, huấn luyện đến triển khai mô hình học máy.
 - Học cách tích hợp các dịch vụ AI đã được huấn luyện sẵn của AWS vào ứng dụng mà không cần kiến thức chuyên sâu về mô hình thuật toán.
@@ -18,35 +15,29 @@ pre: " <b> 1.5. </b> "
 
 ---
 
-### Nội dung học tập
+**Các công việc cần triển khai trong tuần này:**
 
-#### 1. Các thành phần cốt lõi của Machine Learning Essentials
+| Thứ | Công việc | Ngày |
+|---|---|---|
+| Thứ Hai | Nghiên cứu Amazon SageMaker và cách quản lý vòng đời Machine Learning, đồng thời thiết lập môi trường phát triển với SageMaker Studio hoặc Notebook Instances để triển khai các dự án phân tích dữ liệu. | 18/5 |
+| Thứ Ba | Thực hành các bước Data Preparation và Build trong SageMaker Immersion Day, bao gồm thu thập dữ liệu từ Amazon S3, tiền xử lý, Feature Engineering và xây dựng mô hình trên Jupyter Notebook. | 19/5 |
+| Thứ Tư | Thực hành huấn luyện mô hình với Amazon SageMaker bằng Training Jobs và sử dụng Hyperparameter Tuning để tự động tối ưu tham số, nâng cao hiệu quả mô hình. | 20/5 |
+| Thứ Năm | Thực hành triển khai mô hình trên Amazon SageMaker dưới dạng Inference Endpoint, kiểm thử dự báo qua API thời gian thực và giám sát hiệu suất mô hình sau khi triển khai. | 21/5 |
+| Thứ Sáu | Nghiên cứu và thực hành tích hợp các dịch vụ AI của AWS, sử dụng API cho các tác vụ như nhận diện hình ảnh, phân tích cảm xúc và dịch thuật để bổ sung tính năng AI cho ứng dụng. | 22/5 |
 
-- **Machine Learning with Amazon SageMaker:** Tìm hiểu tổng quan về các thành phần cốt lõi của SageMaker và lý do tại sao nó là nền tảng hàng đầu cho các nhà khoa học dữ liệu.
-- **SageMaker Immersion Day:** một chuỗi các bước thực hành toàn diện (End-to-End ML Pipeline).
-  + **Data Preparation (Chuẩn bị dữ liệu):** Học cách thu thập, làm sạch và biến đổi dữ liệu thô (thường lấy từ S3) thành các định dạng mà mô hình học máy có thể hiểu được.
-  + **Build (Xây dựng mô hình):** Sử dụng các môi trường phát triển như Jupyter Notebook trong SageMaker để viết code, khám phá dữ liệu và chọn thuật toán phù hợp.
-  + **Train (Huấn luyện):** Thực hành cấu hình các máy chủ mạnh mẽ (GPU/CPU) để chạy các tác vụ huấn luyện mô hình trên quy mô lớn chỉ với vài dòng lệnh hoặc thao tác trên bảng điều khiển.
-  + **Tune (Tối ưu hóa):** Học cách sử dụng tính năng Hyperparameter Tuning để tự động tìm ra các tham số tốt nhất, giúp tối ưu hóa độ chính xác của mô hình.
-  + **Deploy (Triển khai):** Thực hành đưa mô hình đã huấn luyện ra thực tế bằng cách tạo ra các Inference Endpoints, giúp các ứng dụng khác có thể gọi đến để dự báo dữ liệu theo thời gian thực.
-
-#### 2. Tích hợp các dịch vụ AI thông minh (AI Services Integration)
-
-- **AWS AI Services Integration:** Tìm hiểu cách gọi các API của AWS để tích hợp các tính năng thông minh như:
-  + Nhận diện hình ảnh và video.
-  + Phân tích cảm xúc văn bản và trích xuất thông tin.
-  + Chuyển đổi ngôn ngữ và giọng nói.
-  + Dự báo chuỗi thời gian mà không cần xây dựng mô hình từ đầu.
-
----
-
-### Bài học rút ra
-
-- **Hiểu được quy trình phát triển Machine Learning hoàn chỉnh:** Việc xây dựng một mô hình Machine Learning không chỉ dừng ở bước huấn luyện mà còn bao gồm các giai đoạn như chuẩn bị dữ liệu, huấn luyện, đánh giá, triển khai và theo dõi mô hình trong thực tế.
-- **Hiểu được lợi ích của Amazon SageMaker trong phát triển AI/ML:** Amazon SageMaker giúp đơn giản hóa việc xây dựng, huấn luyện và triển khai các mô hình Machine Learning trên hạ tầng điện toán đám mây. Điều này cho phép xử lý các bài toán và tập dữ liệu lớn mà không phụ thuộc vào cấu hình của máy tính cá nhân.
-- **Biết cách lựa chọn giải pháp AI phù hợp với từng bài toán:** Đối với những bài toán đặc thù có thể xây dựng mô hình riêng bằng Amazon SageMaker, trong khi các bài toán phổ biến có thể tận dụng các dịch vụ AI có sẵn của AWS để rút ngắn thời gian phát triển và tối ưu nguồn lực.
-- **Hiểu được quy trình triển khai mô hình vào thực tế:** khi mô hình được huấn luyện và đánh giá, cần triển khai thành các API Endpoint để các ứng dụng có thể sử dụng. Điều này giúp hiểu rõ hơn về quy trình đưa mô hình Machine Learning từ môi trường phát triển vào vận hành trong thực tế.
-
----
-
-*Nguồn tài liệu chính: [First Cloud Journey - AWS Study Group](https://cloudjourney.awsstudygroup.com/)*
+**Kết quả đạt được trong tuần là gì:**
+- **Thứ Hai:**
+  - Kết quả đạt được: Hiểu rõ các thành phần cấu thành nên hệ sinh thái ML trên AWS, khởi tạo thành công môi trường lập trình Notebook sẵn sàng cho việc huấn luyện mô hình.
+  - Bài học: việc sử dụng nền tảng Managed Service giúp giảm bớt gánh nặng quản trị hạ tầng tính toán (GPU/CPU).
+- **Thứ Ba:**
+  - Kết quả đạt được: Xây dựng được tập dữ liệu sạch sẵn sàng cho việc huấn luyện, làm chủ giao diện SageMaker Studio để quản lý mã nguồn và dữ liệu hiệu quả.
+  - Bài học: Giai đoạn chuẩn bị dữ liệu luôn chiếm phần lớn thời gian nhưng đóng vai trò quan trọng trong việc quyết định chất lượng và độ chính xác của mô hình học máy sau này.
+- **Thứ Tư:**
+  - Kết quả đạt được: Huấn luyện thành công các mô hình học máy, tìm ra bộ tham số tối ưu thông qua các thử nghiệm tự động mà không cần can thiệp thủ công nhiều lần.
+  - Bài học: Việc điều chỉnh tham số giúp tiết kiệm đáng kể thời gian và giúp khám phá ra các cấu hình mô hình mà các phương pháp thử nghiệm thủ công có thể bỏ sót.
+- **Thứ Năm:**
+  - Kết quả đạt được: Triển khai thành công mô hình học máy dưới dạng một web service, có khả năng lấy kết quả dự báo từ ứng dụng thực tế.
+  - Bài học: Quy trình đưa mô hình từ môi trường nghiên cứu ra thực tế (Production) phải có kỹ năng đóng gói mô hình và quản lý điểm cuối (Endpoint) để đảm bảo hệ thống luôn sẵn sàng phục vụ.
+- **Thứ Sáu:**
+  - Kết quả đạt được: Hiểu và vận dụng các dịch vụ AI của AWS, đồng thời phân biệt kịch bản sử dụng giữa Amazon SageMaker và các dịch vụ AI dựng sẵn để lựa chọn giải pháp phù hợp.
+  - Bài học:  Việc tận dụng các dịch vụ AI đã được tối ưu hóa giúp tăng tốc độ phát triển và giảm thiểu chi phí bảo trì so với việc tự xây dựng mô hình từ đầu.

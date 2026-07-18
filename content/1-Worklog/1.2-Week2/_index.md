@@ -6,52 +6,43 @@ chapter: false
 pre: " <b> 1.2. </b> "
 ---
 
-> **Duration:** 27/04/2026 - 01/05/2026 Database Management and Data Migration
+
+**Weekly Objectives**
+
+- Master different data storage models: Learn the differences between relational (SQL) and non-relational (NoSQL) databases and apply them to various analytics scenarios.
+- Learn data migration techniques: Transfer data from on-premises environments or between different systems into AWS Cloud for further processing.
+- Optimize database queries: Develop advanced SQL skills to improve data retrieval efficiency.
 
 ---
 
-### Weekly Objectives
+**Tasks to Be Completed This Week**
 
-- Master different types of data storage: Understand and practice using both relational (SQL) and non-relational (NoSQL) databases to support various data analytics workloads.
-- Learn how to migrate data from on-premises environments or external systems into AWS Cloud, preparing it for further processing and analysis.
-- Optimize data queries: Develop a deeper understanding of advanced SQL techniques to retrieve and process data more efficiently.
+| Day | Tasks | Date |
+|---|---|---|
+| **Monday** | Study and practice provisioning a relational database using Amazon Relational Database Service (RDS). Explore managed features such as automated backups, version upgrades, and Multi-AZ deployments for high availability. Configure Security Groups to control database access and test connectivity from an Amazon EC2 instance or local workstation in preparation for future data analytics exercises. | Apr 27 |
+| **Tuesday** | Continue practicing Amazon RDS by deploying and managing relational databases such as MySQL and PostgreSQL on AWS. Complete the **Advanced PostgreSQL on AWS (Part 1 & 2)** modules to learn advanced query optimization techniques and efficient processing of complex datasets for data preprocessing tasks. | Apr 28 |
+| **Wednesday** | Learn and practice NoSQL database concepts through **NoSQL Database Essentials with Amazon DynamoDB**. Create schema-less tables with high scalability and complete the **Building Advanced Applications with Amazon DynamoDB** lab to design optimized data models for Big Data applications requiring ultra-low latency. | Apr 29 |
+| **Thursday** | Practice database migration using **AWS Database Migration Service (DMS)** together with the **Schema Conversion Tool (SCT)**. Learn how to automatically convert database schemas and establish secure, continuous data synchronization from external environments to AWS. | Apr 30 |
+| **Friday** | Implement an in-memory caching solution using **Amazon ElastiCache** to improve data access performance. Explore **AWS Storage Gateway** to establish seamless hybrid storage connectivity between on-premises infrastructure and AWS cloud storage services. | May 1 |
 
----
+**Weekly Results**
 
-### Learning Contents
+- **Monday:**
+  - **Achievement:** Successfully deployed a fully managed MySQL/PostgreSQL database instance on AWS. Established secure connectivity and became familiar with the Amazon RDS management console.
+  - **Lesson Learned:** Using a managed database service such as Amazon RDS significantly reduces infrastructure management overhead compared with manually deploying databases on Amazon EC2.
 
-#### 1. Relational Databases (SQL)
+- **Tuesday:**
+  - **Achievement:** Successfully provisioned an Amazon RDS PostgreSQL instance and executed complex SQL queries with improved performance through query optimization techniques.
+  - **Lesson Learned:** Advanced SQL enables data cleaning and preprocessing directly within the database, reducing the need for additional processing in Python or R.
 
-- **Database Essentials with Amazon Relational Database Service (RDS):** Learn how to provision, manage, and scale popular relational database engines such as MySQL, PostgreSQL, and SQL Server.
-- **Advanced PostgreSQL on AWS (Part 1 & Part 2):** Practice advanced PostgreSQL techniques to optimize query performance and manage complex datasets, which are especially valuable for SQL-based data pre-processing.
+- **Wednesday:**
+  - **Achievement:** Successfully created an Amazon DynamoDB table and performed high-speed Key-Value data retrieval operations.
+  - **Lesson Learned:** NoSQL databases are well suited for storing unstructured data and processing large-scale workloads with high read/write throughput that traditional relational databases may struggle to achieve.
 
-#### 2. NoSQL Databases (Unstructured Data)
+- **Thursday:**
+  - **Achievement:** Successfully simulated the migration of an existing database to AWS Cloud with minimal downtime.
+  - **Lesson Learned:** AWS Schema Conversion Tool (SCT) and AWS Database Migration Service (DMS) help automate database migration, reducing manual effort, minimizing errors, and accelerating the migration process.
 
-- **NoSQL Database Essentials with Amazon DynamoDB:** Learn the fundamentals of Amazon DynamoDB, a low-latency Key-Value and Document database service. Understand the core concepts of schema-less data storage.
-- **Building Advanced Applications with Amazon DynamoDB:** Practice advanced data modeling techniques to optimize application performance, scalability, and cost efficiency in real-world scenarios.
-
-#### 3. Data Migration to the Cloud
-
-- **Database Migration with AWS Database Migration Service (DMS):** Learn how to migrate databases securely and efficiently from external sources to AWS with minimal downtime.
-- **Schema Conversion Tool (SCT):** Learn how to use AWS Schema Conversion Tool (SCT) to automatically convert source database schemas into formats compatible with AWS target services (for example, migrating from Oracle to Amazon RDS for PostgreSQL).
-
-#### 4. Performance Optimization
-
-- **In-Memory Caching with Amazon ElastiCache:** Learn how to implement in-memory caching to improve application response times and reduce the workload on primary databases.
-
-#### 5. Hybrid Storage Management
-
-- **Hybrid Storage with AWS Storage Gateway:** Learn how to connect on-premises storage infrastructure with AWS cloud storage services, enabling seamless and continuous data transfer between local environments and the cloud.
-
----
-
-### Key Takeaways
-
-- **Understanding the differences between relational and non-relational databases:** Gain a clear understanding of the characteristics and use cases of Amazon RDS and Amazon DynamoDB, enabling you to choose the most suitable database based on data structure, scalability requirements, and application needs.
-- **Enhancing SQL data processing skills:** Learn how to use advanced SQL techniques to filter, transform, and preprocess data directly within database queries, reducing downstream processing effort.
-- **Understanding cloud data migration workflows:** Learn how databases can be securely migrated and synchronized from existing systems to AWS Cloud while minimizing downtime and supporting enterprise data storage and analytics requirements.
-- **Recognizing the role of caching in system performance:** Through Amazon ElastiCache, understand how caching improves data retrieval speed, reduces database load, and enhances the performance of applications as well as real-world analytics and AI/ML systems.
-
----
-
-*Source: [First Cloud Journey - AWS Study Group](https://cloudjourney.awsstudygroup.com/)*
+- **Friday:**
+  - **Achievement:** Successfully integrated an in-memory caching layer to reduce the workload on the primary database and configured AWS Storage Gateway to synchronize on-premises data automatically with Amazon S3.
+  - **Lesson Learned:** Optimizing data access performance through caching enables faster response times for real-time analytics while hybrid storage solutions simplify data synchronization between on-premises and cloud environments.

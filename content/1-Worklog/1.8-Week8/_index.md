@@ -6,36 +6,43 @@ chapter: false
 pre: " <b> 1.8. </b> "
 ---
 
-> **Duration:** 08/06/2026 - 14/06/2026 Implementing the Ingestion Layer for the Data Lakehouse
+**Weekly Objectives**
+
+- Implement the **Ingestion Layer** for the Data Lakehouse system to collect data from multiple sources.
+- Build two data ingestion mechanisms, **Batch Processing** and **Streaming Processing**, to support both scheduled and real-time data processing requirements.
+- Set up and configure AWS services required for the data ingestion process.
+- Verify that data is ingested accurately, completely, and successfully stored in the **Raw Layer** on Amazon S3.
 
 ---
 
-### Weekly Objectives
+**Tasks to be completed this week:**
 
-- Implement the Ingestion Layer for the Data Lakehouse to collect data from multiple data sources.
-- Build two data ingestion mechanisms—Batch Processing and Streaming Processing—to support both scheduled and real-time data processing requirements.
-- Configure and deploy the AWS services required for the data ingestion pipeline.
-- Verify that incoming data is successfully ingested, validated, and stored in the Raw Layer on Amazon S3.
+| Day | Task | Date |
+|---|---|---|
+| Monday | Configure Amazon API Gateway to receive requests from external applications. Develop an AWS Lambda function to process incoming data and store it in Amazon S3. | 8/6 |
+| Tuesday | Configure Amazon Kinesis Data Firehose to receive streaming data and automatically deliver it to the Raw Layer on Amazon S3. Test the Streaming Processing pipeline. | 9/6 |
+| Wednesday | Configure Amazon EventBridge Scheduler to automatically trigger scheduled data synchronization. Develop an AWS Lambda function for the Batch Processing pipeline to synchronize data from the database to Amazon S3. | 10/6 |
+| Thursday | Integrate all components of the Ingestion Layer, test both the Batch Processing and Streaming Processing pipelines, and verify that data is stored in the correct folder structure within the Raw Layer on Amazon S3. | 11/6 |
+| Friday | Monitor system activity using Amazon CloudWatch Logs, analyze log files, resolve issues, evaluate data ingestion performance, and complete the Ingestion Layer deployment documentation. | 12/6 |
 
----
+**What were the achievements this week?**
 
-### Work Activities
+- **Monday:**
+  - **Achievement:** Successfully configured Amazon API Gateway and deployed an AWS Lambda function to receive data from APIs and store it in Amazon S3.
+  - **Lesson Learned:** Combining API Gateway with AWS Lambda enables the development of flexible, scalable serverless APIs while significantly reducing operational costs compared to traditional server-based architectures.
 
-- Configure **Amazon API Gateway** to receive requests and data from external applications.
-- Develop **AWS Lambda** functions to process incoming data from API Gateway and store it in the data storage layer.
-- Configure **Amazon Kinesis Data Firehose** to ingest streaming data and automatically deliver it to **Amazon S3**.
-- Set up **Amazon EventBridge Scheduler** to automatically trigger scheduled data synchronization workflows.
-- Develop an **AWS Lambda** function for the Batch Processing pipeline to synchronize data from the source database to Amazon S3.
-- Test the complete data ingestion workflow for both the Batch Processing and Streaming Processing pipelines, and evaluate system reliability and stability.
-- Verify that data is stored in the correct directory structure within the Raw Layer of Amazon S3.
-- Monitor and analyze system logs using **Amazon CloudWatch Logs** to detect errors, troubleshoot issues, and evaluate the performance of the data ingestion process.
+- **Tuesday:**
+  - **Achievement:** Successfully configured Amazon Kinesis Data Firehose, enabling streaming data to be automatically delivered to the Raw Layer on Amazon S3 as designed.
+  - **Lesson Learned:** Amazon Kinesis Data Firehose simplifies real-time data ingestion by continuously delivering streaming data without requiring a custom ingestion mechanism.
 
----
+- **Wednesday:**
+  - **Achievement:** Successfully implemented the Batch Processing pipeline using Amazon EventBridge Scheduler and AWS Lambda to automatically synchronize data from the database to Amazon S3 on a scheduled basis.
+  - **Lesson Learned:** Automating the Batch Processing workflow reduces manual effort and ensures that data is synchronized accurately and on schedule.
 
-### Achievements
+- **Thursday:**
+  - **Achievement:** Successfully integrated both the Batch Processing and Streaming Processing pipelines and verified that data was stored in the correct directory structure within the Raw Layer on Amazon S3.
+  - **Lesson Learned:** End-to-end pipeline testing helps identify integration issues between AWS services early, ensuring a stable foundation before implementing downstream data processing stages.
 
-- Successfully implemented the Ingestion Layer for the Data Lakehouse architecture.
-- Successfully built two data ingestion pipelines based on the Batch Processing and Streaming Processing models.
-- Successfully configured and integrated **Amazon API Gateway**, **AWS Lambda**, **Amazon Kinesis Data Firehose**, **Amazon EventBridge Scheduler**, and **Amazon S3** into the data ingestion workflow.
-- Incoming data was automatically ingested and successfully stored in the Raw Layer of Amazon S3 according to the designed architecture.
-- Successfully completed end-to-end testing of the data ingestion pipelines, confirming that the system operates reliably and is ready for the next phase of ETL development and data processing within the subsequent layers of the Data Lakehouse.
+- **Friday:**
+  - **Achievement:** Monitored and analyzed system logs using Amazon CloudWatch Logs, resolved operational issues, evaluated data ingestion performance, and completed the Ingestion Layer deployment documentation.
+  - **Lesson Learned:** Amazon CloudWatch Logs is an essential monitoring tool for serverless systems, enabling rapid troubleshooting, performance optimization, and improved reliability across the entire data pipeline.

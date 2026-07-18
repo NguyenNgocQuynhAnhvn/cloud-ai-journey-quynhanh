@@ -6,11 +6,8 @@ chapter: false
 pre: " <b> 1.8. </b> "
 ---
 
-> **Thời gian:** 08/06/2026 - 14/06/2026 Triển khai tầng Ingestion Layer cho hệ thống Data Lakehouse.
 
----
-
-### Mục tiêu trong tuần
+**Mục tiêu trong tuần**
 
 - Triển khai tầng Ingestion Layer cho hệ thống Data Lakehouse nhằm thu thập dữ liệu từ nhiều nguồn khác nhau.
 - Xây dựng hai cơ chế tiếp nhận dữ liệu gồm Batch Processing và Streaming Processing để đáp ứng các yêu cầu xử lý dữ liệu định kỳ và dữ liệu thời gian thực.
@@ -19,23 +16,35 @@ pre: " <b> 1.8. </b> "
 
 ---
 
-### Nội dung công việc
+**Các công việc cần triển khai trong tuần này:**
 
-- Thiết lập **Amazon API Gateway** để tiếp nhận các yêu cầu và dữ liệu từ ứng dụng bên ngoài.
-- Phát triển **AWS Lambda** làm nhiệm vụ xử lý dữ liệu đầu vào từ API Gateway và lưu dữ liệu vào hệ thống lưu trữ.
-- Cấu hình **Amazon Kinesis Data Firehose** để tiếp nhận luồng dữ liệu Streaming và tự động ghi dữ liệu vào Amazon S3.
-- Thiết lập **Amazon EventBridge Scheduler** nhằm tự động kích hoạt quy trình đồng bộ dữ liệu theo lịch định kỳ.
-- Xây dựng hàm **AWS Lambda** phục vụ pipeline Batch Processing để đồng bộ dữ liệu từ cơ sở dữ liệu lên Amazon S3.
-- Kiểm thử toàn bộ quy trình ingest dữ liệu của cả hai pipeline (Batch Processing và Streaming Processing), đồng thời đánh giá tính ổn định của hệ thống.
-- Xác minh dữ liệu được lưu đúng cấu trúc thư mục trong Raw Layer trên Amazon S3.
-- Theo dõi và phân tích nhật ký hoạt động thông qua **Amazon CloudWatch Logs** để phát hiện, xử lý lỗi và đánh giá hiệu suất của quá trình tiếp nhận dữ liệu.
+| Thứ | Công việc | Ngày |
+|---|---|---|
+| Thứ Hai | Thiết lập Amazon API Gateway để tiếp nhận yêu cầu từ ứng dụng bên ngoài. Xây dựng hàm AWS Lambda xử lý dữ liệu đầu vào và lưu dữ liệu vào Amazon S3. | 8/6 |
+| Thứ Ba | Cấu hình Amazon Kinesis Data Firehose để tiếp nhận luồng dữ liệu Streaming và tự động ghi dữ liệu vào Raw Layer trên Amazon S3. Kiểm thử luồng Streaming Processing. | 9/6 |
+| Thứ Tư | Thiết lập Amazon EventBridge Scheduler để tự động kích hoạt quy trình đồng bộ dữ liệu theo lịch. Xây dựng hàm AWS Lambda phục vụ pipeline Batch Processing đồng bộ dữ liệu từ cơ sở dữ liệu lên Amazon S3. | 10/6 |
+| Thứ Năm | Tích hợp toàn bộ các thành phần của Ingestion Layer, kiểm thử hai pipeline Batch Processing và Streaming Processing, đồng thời xác minh dữ liệu được lưu đúng cấu trúc trong Raw Layer trên Amazon S3. | 11/6 |
+| Thứ Sáu | Theo dõi hoạt động của hệ thống bằng Amazon CloudWatch Logs, phân tích nhật ký, xử lý lỗi phát sinh và đánh giá hiệu suất của quá trình ingest dữ liệu. Hoàn thiện tài liệu triển khai Ingestion Layer. | 12/6 |
 
----
+**Kết quả đạt được trong tuần là gì:**
 
-### Kết quả đạt được
+- **Thứ Hai:**
+  - **Kết quả đạt được:** Hoàn thành cấu hình Amazon API Gateway và triển khai AWS Lambda tiếp nhận dữ liệu từ API, lưu dữ liệu thành công lên Amazon S3.
+  - **Bài học:** API Gateway kết hợp với Lambda giúp xây dựng các API serverless linh hoạt, dễ mở rộng và giảm đáng kể chi phí vận hành so với mô hình máy chủ truyền thống.
 
-- Hoàn thành việc triển khai tầng Ingestion Layer cho hệ thống Data Lakehouse.
-- Xây dựng thành công hai pipeline thu thập dữ liệu theo mô hình Batch Processing và Streaming Processing.
-- Thiết lập và tích hợp thành công các dịch vụ **Amazon API Gateway, AWS Lambda, Amazon Kinesis Data Firehose, Amazon EventBridge Scheduler** và **Amazon S3** trong quy trình ingest dữ liệu.
-- Dữ liệu được tự động tiếp nhận và lưu trữ thành công vào Raw Layer trên Amazon S3 theo đúng thiết kế kiến trúc.
-- Hoàn thành kiểm thử toàn bộ luồng tiếp nhận dữ liệu, xác nhận hệ thống hoạt động ổn định và sẵn sàng cho giai đoạn xây dựng quy trình ETL và xử lý dữ liệu ở các tầng tiếp theo của Data Lakehouse.
+- **Thứ Ba:**
+  - **Kết quả đạt được:** Cấu hình thành công Amazon Kinesis Data Firehose, dữ liệu Streaming được tự động ghi vào Raw Layer trên Amazon S3 theo đúng thiết kế.
+  - **Bài học:** Kinesis Data Firehose đơn giản hóa việc thu thập dữ liệu thời gian thực, giúp dữ liệu được truyền liên tục mà không cần tự xây dựng cơ chế ghi dữ liệu phức tạp.
+
+- **Thứ Tư:**
+  - **Kết quả đạt được:** Hoàn thành pipeline Batch Processing sử dụng Amazon EventBridge Scheduler và AWS Lambda để tự động đồng bộ dữ liệu từ cơ sở dữ liệu lên Amazon S3 theo lịch định kỳ.
+  - **Bài học:** Việc tự động hóa quy trình Batch Processing giúp giảm thao tác thủ công, đảm bảo dữ liệu luôn được cập nhật đầy đủ và đúng thời điểm.
+
+- **Thứ Năm:**
+  - **Kết quả đạt được:** Tích hợp thành công hai pipeline Batch Processing và Streaming Processing, xác nhận dữ liệu được lưu đúng cấu trúc thư mục trong Raw Layer trên Amazon S3.
+  - **Bài học:** Kiểm thử toàn bộ pipeline giúp phát hiện sớm các lỗi tích hợp giữa các dịch vụ AWS, đảm bảo hệ thống hoạt động ổn định trước khi triển khai các bước xử lý dữ liệu tiếp theo.
+
+- **Thứ Sáu:**
+  - **Kết quả đạt được:** Theo dõi và phân tích nhật ký hệ thống bằng Amazon CloudWatch Logs, xử lý các lỗi phát sinh và đánh giá hiệu suất của quá trình ingest dữ liệu. Hoàn thiện tài liệu triển khai Ingestion Layer.
+  - **Bài học:** CloudWatch Logs là công cụ quan trọng giúp giám sát hệ thống serverless, hỗ trợ nhanh chóng trong việc phát hiện lỗi, tối ưu hiệu năng và nâng cao độ tin cậy của toàn bộ pipeline.
+

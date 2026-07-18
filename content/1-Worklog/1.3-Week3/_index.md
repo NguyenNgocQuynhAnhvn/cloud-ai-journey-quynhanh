@@ -6,53 +6,44 @@ chapter: false
 pre: " <b> 1.3. </b> "
 ---
 
-> **Duration:** 04/05/2026 - 10/05/2026 Building a Data Lake and Data Engineering
+
+**Weekly Objectives**
+
+- Understand and build a Data Lake: Learn the core concepts and implementation of a Data Lake using Amazon S3.
+- Master the ETL process: Learn how to Extract, Transform, and Load (ETL) data using AWS services.
+- Automate data processing: Build serverless data pipelines using AWS managed services.
+- Optimize data organization: Organize data efficiently to improve query performance and support analytics in subsequent stages.
 
 ---
 
-### Weekly Objectives
+**Tasks to Be Completed This Week**
 
-- Understand and build a Data Lake: Learn the fundamental concepts of a Data Lake and how to implement one using Amazon S3.
-- Learn the ETL process: Understand how to extract, transform, and load (ETL) data using AWS data engineering services.
-- Automate data processing: Use serverless services to build automated data pipelines.
-- Optimize data management: Organize data efficiently to improve query performance and support analytics in the following weeks.
+| Day | Tasks | Date |
+|---|---|---|
+| **Monday** | Study the core concepts of Data Lake architecture, focusing on the central role of Amazon S3 in storing both raw and processed data. Practice designing a layered storage structure and explore Lifecycle Policies to optimize storage costs for large datasets. | May 4 |
+| **Tuesday (Office)** | Practice ingesting real-world datasets into the cloud. Learn how to organize data using partitioning techniques to improve query performance and implement fine-grained access control for different data partitions. | May 5 |
+| **Wednesday (Office)** | Study the complete data lifecycle, including data ingestion, storage, and transformation. Learn how AWS services work together to build clean and reliable data pipelines for Machine Learning applications. | May 6 |
+| **Thursday** | Study and practice building an automated data catalog using AWS Glue Crawlers and perform data format transformations to improve query performance. Use Amazon Athena to execute SQL queries directly against data stored in Amazon S3 without managing server infrastructure. | May 7 |
+| **Friday** | Study and implement automated data processing using AWS Lambda. Use AWS Step Functions to orchestrate multi-step workflows with built-in error handling and recovery mechanisms. | May 8 |
 
----
+**Weekly Results**
 
-### Learning Contents
+- **Monday:**
+  - **Achievement:** Gained a solid understanding of layered Data Lake architecture and successfully configured automated storage lifecycle policies in Amazon S3.
+  - **Lesson Learned:** A Data Lake is more than just a file repository—it is a structured data management platform that keeps data organized and readily available for various analytics workloads without requiring immediate schema definition.
 
-#### 1. Data Lake Fundamentals and Implementation
+- **Tuesday (Office):**
+  - **Achievement:** Successfully built a secure and high-performance Data Lake by configuring Amazon S3 buckets with appropriate security settings and optimized data organization.
+  - **Lesson Learned:** Data partitioning (for example, by year, month, and day) is essential for reducing query costs and significantly improving query performance when working with Big Data.
 
-- **Data Lake Fundamentals on AWS:** Learn the core concepts of Data Lake architecture, including data layering (raw, processed, and analytics-ready data), and understand why Amazon S3 is the preferred storage solution for building a Data Lake.
-- **Building a Data Lake with Your Own Data:** Practice uploading real-world datasets to Amazon S3, organizing data using prefixes, and managing the data lifecycle.
+- **Wednesday (Office):**
+  - **Achievement:** Completed a basic ETL (Extract, Transform, Load) workflow and gained a clear understanding of how data flows through different AWS services.
+  - **Lesson Learned:** Clean, well-structured data is the foundation for building accurate and reliable AI and Machine Learning models.
 
-#### 2. Data Engineering
+- **Thursday:**
+  - **Achievement:** Successfully automated schema discovery using AWS Glue Crawlers and executed complex SQL queries on raw datasets efficiently using Amazon Athena.
+  - **Lesson Learned:** Serverless services such as AWS Glue and Amazon Athena allow data engineers to focus on data processing and analytics without the operational burden of managing infrastructure.
 
-- **Data Engineering Immersion Day:** Gain hands-on experience with the complete data engineering workflow, including data ingestion, storage, processing, and analytics. Learn how AWS services work together in real-world data engineering projects.
-- **Cost Data Analysis with AWS Glue and Amazon Athena:** Use AWS Glue Crawlers to automatically scan data stored in Amazon S3 and create metadata tables in the AWS Glue Data Catalog. Learn how to use AWS Glue ETL jobs to clean and transform data (for example, converting CSV files into Parquet format to improve query performance).
-
-#### 3. Serverless Analytics
-
-- **Serverless Analytics with Amazon Athena:** Practice writing standard SQL queries to analyze data stored directly in Amazon S3. Learn techniques such as data partitioning to improve query performance and reduce operational costs.
-
-#### 4. Automation and Workflow Orchestration
-
-- **Serverless Automation with AWS Lambda:** Learn how to develop Lambda functions that automatically trigger data processing workflows whenever new files are uploaded to the Data Lake.
-- **Workflow Orchestration with AWS Step Functions:** Practice designing multi-step data processing workflows (for example: Step 1 – Validate data → Step 2 – Execute an AWS Glue Job → Step 3 – Send a notification) with built-in error handling and automated execution.
-
-#### 5. Resource Organization and Management
-
-- **Resource Organization with Tags and Resource Groups:** Learn how to organize AWS resources by assigning tags, making it easier to manage resources across different projects and research stages.
-
----
-
-### Key Takeaways
-
-- **Understanding the role of a Data Lake in data storage:** Amazon S3 is more than just a storage service—it serves as the foundation of a modern data analytics platform. It enables scalable and cost-effective storage for both raw and processed data, making future analytics and machine learning workflows more efficient.
-- **Understanding the benefits of the serverless model:** AWS Glue and Amazon Athena enable data transformation and querying without the need to provision or manage servers, simplifying infrastructure management while reducing operational costs.
-- **Recognizing the importance of ETL and data standardization:** Cleaning, transforming, and standardizing data are essential steps before performing data analysis or training machine learning models. Well-prepared data significantly improves model accuracy and overall analytical performance.
-- **Understanding the role of automation in data processing:** AWS Lambda and AWS Step Functions help automate repetitive tasks, create consistent data processing workflows, and enable the system to automatically respond whenever new data is added to the Data Lake.
-
----
-
-*Source: [First Cloud Journey - AWS Study Group](https://cloudjourney.awsstudygroup.com/)*
+- **Friday:**
+  - **Achievement:** Successfully built a fully automated event-driven data processing system and implemented a workflow orchestration process capable of monitoring the status of each processing stage.
+  - **Lesson Learned:** Workflow automation and orchestration enable data pipelines to operate reliably around the clock, minimize human errors, and improve the overall professionalism and scalability of data engineering projects.

@@ -6,37 +6,44 @@ chapter: false
 pre: " <b> 1.9. </b> "
 ---
 
-> **Duration:** 22/06/2026 - 28/06/2026 Implementing the Bronze, Silver, and Gold Layers in a Medallion Data Lakehouse Architecture
+**Weekly Objectives**
+
+- Implement the **Data Processing Layer** based on the Medallion Data Lakehouse architecture.
+- Build ETL workflows using AWS Glue to process data through the Bronze, Silver, and Gold layers.
+- Clean, standardize, and aggregate data to support analytics and visualization.
+- Store data in an optimized format and register data tables in AWS Glue Data Catalog to enable querying with Amazon Athena.
 
 ---
 
-### Weekly Objectives
+**Tasks to be completed this week:**
 
-- Implement the Data Processing Layer based on the Medallion Data Lakehouse architecture.
-- Build ETL pipelines using AWS Glue to process data through the Bronze, Silver, and Gold layers.
-- Clean, standardize, and aggregate data to support business analytics and data visualization.
-- Organize data in an optimized storage format and register datasets in the AWS Glue Data Catalog to enable querying with Amazon Athena.
+| Day | Task | Date |
+|---|---|---|
+| Monday | Build AWS Glue ETL Jobs for the Bronze Layer to convert data from CSV to Apache Parquet format, automatically infer the schema, and store the data as individual tables on Amazon S3. | 15/6 |
+| Tuesday | Implement the Silver Layer by cleaning and standardizing the data, including removing duplicate records, standardizing column names, processing string data, normalizing date and time formats, and validating data type consistency. | 16/6 |
+| Wednesday | Build the Gold Layer by aggregating data to create analytical tables, including Dashboard Summary, Daily Revenue, Event Summary, Country Revenue, Device Summary, Payment Summary, and Source Summary. | 17/6 |
+| Thursday | Store all processed data in Apache Parquet format on Amazon S3. Register the Gold Layer tables in AWS Glue Data Catalog and verify their query capability using Amazon Athena. | 18/6 |
+| Friday | Test the complete ETL workflow from Raw → Bronze → Silver → Gold, verify data accuracy at each layer, evaluate processing performance, and finalize the Data Processing Layer documentation. | 19/6 |
 
----
+**What were the achievements this week?**
 
-### Work Activities
+- **Monday:**
+  - **Achievement:** Successfully implemented the Bronze Layer using AWS Glue ETL, converted data from CSV to Apache Parquet format, and stored it on Amazon S3 according to the designed folder structure.
+  - **Lesson Learned:** Converting data to Apache Parquet significantly reduces storage requirements, improves data reading performance, and optimizes downstream processing tasks.
 
-- Develop **AWS Glue ETL Jobs** to process data across the entire pipeline from **Raw → Bronze → Silver → Gold**.
-- Implement the **Bronze Layer** by converting raw CSV files into **Apache Parquet** format, performing automatic schema inference, and organizing datasets into separate tables on **Amazon S3**.
-- Implement the **Silver Layer** by cleaning and standardizing data, including removing duplicate records, standardizing column names, processing string values, normalizing date and time formats, and validating data type consistency.
-- Implement the **Gold Layer** by creating business-oriented analytical datasets, including **Dashboard Summary**, **Daily Revenue**, **Event Summary**, **Country Revenue**, **Device Summary**, **Payment Summary**, and **Source Summary** tables.
-- Perform data aggregation to calculate key business metrics, including customer count, order count, total revenue, average order value, and revenue breakdowns by country, device type, payment method, and traffic source.
-- Store all processed datasets in **Apache Parquet** format on **Amazon S3** to optimize storage efficiency and query performance.
-- Register the Gold Layer analytical tables in the **AWS Glue Data Catalog**, making them available for querying through **Amazon Athena**.
-- Validate the complete ETL workflow to ensure that data is correctly processed and stored at every stage of the Medallion architecture.
+- **Tuesday:**
+  - **Achievement:** Successfully completed the Silver Layer with cleaned, standardized, and consistent data ready for analytical processing.
+  - **Lesson Learned:** Data quality directly impacts the quality of analytical results, making data cleaning and standardization essential steps in the ETL process.
 
----
+- **Wednesday:**
+  - **Achievement:** Successfully built the Gold Layer by creating aggregated analytical tables for dashboards and business intelligence reporting.
+  - **Lesson Learned:** Organizing aggregated data according to business use cases significantly reduces query execution time and improves the efficiency of data visualization.
 
-### Achievements
+- **Thursday:**
+  - **Achievement:** Successfully registered the Gold Layer tables in AWS Glue Data Catalog, making them available for querying through Amazon Athena.
+  - **Lesson Learned:** AWS Glue Data Catalog serves as a centralized metadata repository, enabling Amazon Athena and other analytics services to efficiently discover and access data.
 
-- Successfully implemented the **Data Processing Layer** based on the Medallion Data Lakehouse architecture.
-- Successfully developed automated **AWS Glue ETL pipelines** covering the complete data processing workflow from **Raw → Bronze → Silver → Gold**.
-- Successfully cleaned, standardized, and aggregated the data, ensuring high data quality for downstream analytics.
-- Completed the Bronze, Silver, and Gold layers, with all processed datasets stored in **Apache Parquet** format on **Amazon S3**.
-- Successfully registered the analytical datasets in the **AWS Glue Data Catalog**, enabling efficient querying through **Amazon Athena**.
-- Established a robust data foundation for building business dashboards and supporting subsequent data analytics activities.
+- **Friday:**
+  - **Achievement:** Successfully tested the complete ETL pipeline from the Raw Layer to the Gold Layer, verified data accuracy throughout every processing stage, and confirmed that the data was ready for dashboard development.
+  - **Lesson Learned:** End-to-end ETL testing ensures data accuracy, integrity, and reliability before the data is used for analytics and business intelligence.
+

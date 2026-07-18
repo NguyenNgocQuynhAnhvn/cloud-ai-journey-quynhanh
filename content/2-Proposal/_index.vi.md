@@ -1,6 +1,6 @@
 ---
 title: "Bản đề xuất"
-date: 2026-07-06
+date: 2024-01-01
 weight: 2
 chapter: false
 pre: " <b> 2. </b> "
@@ -22,7 +22,7 @@ Nền tảng hợp nhất **hai luồng ingestion**: các sự kiện clickstrea
 
 > **Sơ đồ kiến trúc tổng thể:**
 
-![FinOps-Optimized Serverless Medallion Data Lakehouse Architecture](/images/2-Proposal/Architecture_DE.png)
+![FinOps-Optimized Serverless Medallion Data Lakehouse Architecture](/images/2-Proposal/de.png)
 
 **Tổng quan nền tảng:**
 

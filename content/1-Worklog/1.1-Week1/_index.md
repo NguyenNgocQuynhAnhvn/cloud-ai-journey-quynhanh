@@ -6,11 +6,8 @@ chapter: false
 pre: " <b> 1.1. </b> "
 ---
 
-> **Duration:** 20/04/2026 - 26/04/2026 Cloud Fundamentals and Secure Environment Setup
 
----
-
-### Weekly Objectives
+**Weekly Objectives**
 
 - Build a secure foundation: Become familiar with the AWS Cloud environment, create an AWS account, and configure basic security and access control.
 - Manage costs effectively: Learn how to monitor and control cloud spending to avoid unexpected charges while working with big data workloads.
@@ -19,44 +16,34 @@ pre: " <b> 1.1. </b> "
 
 ---
 
-### Learning Contents
+**Tasks to Be Completed This Week**
 
-#### 1. Account and Cost Management
+| Day | Tasks | Date |
+|---|---|---|
+| **Monday (Office)** | Create a new AWS account, complete billing setup, and activate the initial **USD 100 AWS credit**. Launch and test an Amazon EC2 instance using a self-generated key pair, experiment with the **Claude 3 Haiku Playground** in Amazon Bedrock, configure cost alerts with AWS Budgets, create a basic AWS Lambda function, and provision an Amazon RDS PostgreSQL database. | Apr 20 |
+| **Tuesday** | Study and practice AWS Identity and Access Management (IAM) by creating Users, Groups, and Policies, and assigning permissions based on the **Principle of Least Privilege**. Learn about IAM Roles and Instance Profiles, and configure an EC2 instance to securely access Amazon S3 without using Access Keys. | Apr 21 |
+| **Wednesday (Office)** | Design and deploy a virtual network using Amazon VPC. Configure core networking components, including Subnets, Internet Gateway, and Route Tables, to build an isolated cloud network. Explore and configure EC2 Auto Scaling to automatically adjust the number of EC2 instances according to workload demands, ensuring high availability for data processing systems. | Apr 22 |
+| **Thursday** | Practice data storage and static website hosting with Amazon S3. Learn how to manage S3 Buckets, object access policies, and storage classes. Set up a cloud-based development environment with AWS Cloud9 and use the AWS CLI to automate AWS resource management tasks. | Apr 23 |
+| **Friday** | Implement centralized monitoring using Amazon CloudWatch. Build CloudWatch Dashboards to monitor system performance and configure CloudWatch Alarms with email notifications. Explore AWS Support plans and support request procedures, and review the weekly AWS Budgets report to analyze actual cloud spending. | Apr 24 |
 
-- **Creating Your First AWS Account:** Register an AWS account, configure billing information, and apply initial security best practices.
-- **Managing Costs with AWS Budgets:** Create an AWS Budget and configure spending alerts (for example, when costs reach $5 or $10) to receive email notifications, helping monitor expenses while working with large datasets.
-- **Getting Help with AWS Support:** Learn how to create a Support Ticket to receive assistance from the AWS technical support team when encountering system issues or service-related questions.
+**Weekly Results**
 
-#### 2. Security and Access Management (IAM)
+- **Monday (Office):**
+  - **Achievement:** Successfully activated an AWS account with a total of **USD 200 in promotional credits**. All five test resources were successfully provisioned and safely terminated after the exercises.
+  - **Lesson Learned:** Became familiar with the AWS Management Console and developed the habit of cleaning up cloud resources immediately after completing hands-on exercises to prevent unnecessary costs.
 
-- **Access Management with IAM:** Practice creating Users, Groups, and assigning IAM Policies. Learn how to grant read-only or full-access permissions to AWS resources.
-- **Instance Profiling with IAM Roles for EC2:** Learn an advanced security practice by attaching an IAM Role to an EC2 instance instead of storing Access Keys on the server. This allows the instance to securely access other AWS services such as Amazon S3 without exposing credentials.
+- **Tuesday:**
+  - **Achievement:** Successfully configured AWS IAM by creating Users, Groups, Policies, IAM Roles, and Instance Profiles. Enabled secure access from an EC2 instance to Amazon S3 without using Access Keys.
+  - **Lesson Learned:** IAM is a fundamental component of cloud security. Applying the Principle of Least Privilege significantly reduces security risks while making access management more efficient.
 
-#### 3. Networking and Compute Infrastructure (VPC & EC2)
+- **Wednesday (Office):**
+  - **Achievement:** Successfully deployed a secure and isolated virtual network using Amazon VPC and gained hands-on experience configuring Subnets, Internet Gateway, Route Tables, and EC2 Auto Scaling.
+  - **Lesson Learned:** Amazon VPC provides the first layer of security for cloud infrastructure. Incorrect Subnet or Route Table configurations can lead to connectivity issues or unintended data exposure.
 
-- **Networking Essentials with Amazon VPC:** Learn how to configure a private virtual network, including Subnets, Route Tables, and an Internet Gateway to control internet access to servers hosting data.
-- **Compute Essentials with Amazon EC2:** Launch a virtual server (EC2 Instance), select an appropriate instance type, choose an Amazon Machine Image (AMI), and configure a Key Pair for secure remote access.
-- **Scaling Applications with EC2 Auto Scaling:** Explore how Auto Scaling automatically increases or decreases the number of EC2 instances based on traffic or computational demand, ensuring system stability during intensive data processing tasks.
+- **Thursday:**
+  - **Achievement:** Successfully stored and managed files in Amazon S3, established a cloud-based development environment using AWS Cloud9, and learned the fundamental AWS CLI commands for managing cloud resources.
+  - **Lesson Learned:** Amazon S3 is much more than cloud storage—it is a highly scalable and durable storage platform. Mastering the AWS CLI is essential for automating cloud workflows and building future data pipelines.
 
-#### 4. Storage and Development Tools
-
-- **Static Website Hosting with Amazon S3:** Learn how to create an S3 Bucket, upload files, and manage access permissions by hosting a static website on Amazon S3.
-- **Cloud Development with AWS Cloud9:** Set up a browser-based integrated development environment (IDE) to write Python code and run data analysis scripts without installing software on a local computer.
-- **Command Line Operations with AWS CLI:** Install and practice using the AWS Command Line Interface (CLI) to interact with and manage AWS services.
-
-#### 5. System Monitoring
-
-- **Monitoring with Amazon CloudWatch:** Learn how to monitor CPU utilization, network traffic, and configure CloudWatch Alarms to notify you when EC2 instances become overloaded during model training or data processing.
-
----
-
-### Key Takeaways
-
-- **Understanding the importance of access control:** Avoid using the Root account for daily operations. Instead, use IAM Users with appropriately assigned permissions to improve security and minimize operational risks.
-- **The importance of cost management:** Setting up AWS Budgets helps proactively monitor cloud spending, maintain cost control, and prevent unexpected charges while using AWS services.
-- **The flexibility of cloud computing:** Instead of upgrading a personal computer, you can launch a powerful Amazon EC2 instance within minutes to process massive datasets and shut it down afterward to reduce costs.
-- **The role of Amazon S3 in data storage:** Amazon S3 is more than just a storage service—it provides high durability, excellent scalability, and seamless integration with many other AWS services. This makes storing, managing, and accessing data much more efficient than relying on traditional local storage.
-
----
-
-*Source: [First Cloud Journey - AWS Study Group](https://cloudjourney.awsstudygroup.com/)*
+- **Friday:**
+  - **Achievement:** Successfully implemented automated infrastructure monitoring with Amazon CloudWatch, including email-based alert notifications. Completed the deployment of a secure cloud foundation and reviewed the week's cloud spending using AWS Budgets.
+  - **Lesson Learned:** Continuous monitoring is essential for maintaining a reliable cloud environment. Performance dashboards and automated alerts enable potential issues to be detected and resolved before they affect system operations.

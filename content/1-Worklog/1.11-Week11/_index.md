@@ -6,35 +6,43 @@ chapter: false
 pre: " <b> 1.11. </b> "
 ---
 
-> **Duration:** 29/06/2026 - 05/07/2026 Finalizing and End-to-End Testing of the Customer Behavior Analytics System
+**Weekly Objectives**
 
----
-
-### Weekly Objectives
-
-- Complete the integration of all components of the Customer Behavior Analytics system on the AWS Cloud.
-- Perform end-to-end testing of the data processing workflow, from data ingestion to dashboard visualization, based on the Data Lakehouse architecture.
+- Complete the integration of all components of the Customer Behavior Analytics system on AWS.
+- Perform end-to-end testing of the data processing workflow from the data sources to the dashboard based on the Data Lakehouse architecture.
 - Evaluate the accuracy, performance, and reliability of the system under both Batch Processing and Streaming Processing scenarios.
-- Finalize the end-to-end architecture and prepare technical documentation for project reporting, evaluation, and presentation.
+- Finalize the end-to-end architecture and prepare documentation for project reporting, evaluation, and presentation.
 
 ---
 
-### Work Activities
+**Tasks to be completed this week:**
 
-- Integrate all system components, including the **Ingestion Layer**, **Data Processing Layer**, **Query Layer**, and **Dashboard**.
-- Perform end-to-end testing of the complete data pipeline, processing data through the **Raw**, **Bronze**, **Silver**, and **Gold** layers, querying the processed data with **Amazon Athena**, and visualizing the results on the dashboard.
-- Execute multiple ETL runs as well as Batch Processing and Streaming Processing workflows to evaluate the stability and reliability of the system.
-- Validate the datasets at every layer of the Medallion architecture to ensure data is processed accurately, completely, and consistently.
-- Compare query results from **Amazon Athena** with the data displayed on the dashboard to verify data consistency.
-- Test the system's ability to process newly generated data and confirm that the dashboard reflects updates correctly after each processing cycle.
-- Finalize the overall system architecture diagram, technical documentation, and deployment procedures for project reporting and presentation.
+| Day | Task | Date |
+|---|---|---|
+| Monday | Integrate all system components, including the Ingestion Layer, Data Processing Layer, Query Layer, and Dashboard. Verify the connectivity and interaction between AWS services throughout the entire pipeline. | 29/6 |
+| Tuesday | Test the complete data processing workflow from Raw → Bronze → Silver → Gold. Execute multiple Batch Processing and Streaming Processing runs to evaluate the stability of the system. | 30/6 |
+| Wednesday | Validate data at each layer of the Medallion architecture. Compare data across Amazon S3, Amazon Athena, and the Dashboard to ensure data accuracy and consistency. | 1/7 |
+| Thursday | Test the system's ability to process newly generated data, verify that the Dashboard automatically reflects updates after data processing, resolve identified issues, and optimize the data processing workflow. | 2/7 |
+| Friday | Finalize the overall architecture diagram, update the technical documentation and deployment guide, and prepare project materials for reporting, evaluation, and presentation. | 3/7 |
 
----
+**What were the achievements this week?**
 
-### Achievements
+- **Monday:**
+  - **Achievement:** Successfully integrated all components of the Customer Behavior Analytics system and verified that the AWS services worked together as designed throughout the pipeline.
+  - **Lesson Learned:** Layer-by-layer integration simplifies data flow management while making the system easier to scale and maintain in the future.
 
-- Successfully completed the integration of the entire Customer Behavior Analytics system based on the Data Lakehouse architecture.
-- Verified that data flows correctly through the complete pipeline, from data ingestion to dashboard visualization, according to the designed architecture.
-- Confirmed the accuracy and consistency between stored datasets, query results from **Amazon Athena**, and the information displayed on the dashboard.
-- Demonstrated stable system performance for both **Batch Processing** and **Streaming Processing** workflows.
-- Completed the end-to-end implementation of the system, making it ready for project evaluation, acceptance, and final presentation.
+- **Tuesday:**
+  - **Achievement:** Successfully tested both the Batch Processing and Streaming Processing pipelines through multiple execution cycles, confirming stable system performance and continuous data processing.
+  - **Lesson Learned:** Repeated testing under different scenarios helps evaluate system reliability and identify potential issues before production deployment.
+
+- **Wednesday:**
+  - **Achievement:** Verified that data was processed accurately and consistently across the Raw, Bronze, Silver, and Gold layers. Query results from Amazon Athena matched the data displayed on the Dashboard.
+  - **Lesson Learned:** Cross-validating data between processing layers and the visualization layer ensures data integrity and the overall reliability of the analytics system.
+
+- **Thursday:**
+  - **Achievement:** Successfully verified both real-time and batch data updates. The Dashboard accurately reflected newly processed data, and issues identified during testing were resolved.
+  - **Lesson Learned:** End-to-end testing not only validates data correctness but also confirms the seamless interaction between all components of the data pipeline.
+
+- **Friday:**
+  - **Achievement:** Completed the technical documentation, finalized the overall architecture diagram, and completed the system deployment guide, preparing the project for reporting, evaluation, and presentation.
+  - **Lesson Learned:** Comprehensive documentation and a standardized architecture simplify system handover, maintenance, and future development.

@@ -12,27 +12,19 @@ The program spans approximately **3 months** (April 20 – July 15, 2026), cover
 
 ---
 
-**Week 1**: [Cloud Fundamentals and Secure Environment Setup](1.1-Week1/)
+| Week | Duration | Focus |
+|------|----------|-------|
+| [**Week 1**](1.1-Week1/) | Apr 20 - Apr 26 | Cloud fundamentals, AWS environment setup, IAM configuration, cost management, and secure infrastructure deployment |
+| [**Week 2**](1.2-Week2/) | Apr 27 - May 3 | Database administration on AWS, Amazon RDS, backup strategies, and database migration |
+| [**Week 3**](1.3-Week3/) | May 4 - May 10 | Building a Data Lake on Amazon S3, AWS Glue Data Catalog, and Data Engineering workflows |
+| [**Week 4**](1.4-Week4/) | May 11 - May 17 | Data analytics with Amazon Athena, data visualization using Amazon QuickSight, and Business Intelligence (BI) |
+| [**Week 5**](1.5-Week5/) | May 18 - May 24 | AI/ML with Amazon SageMaker, including machine learning model training, deployment, and evaluation |
+| [**Week 6**](1.6-Week6/) | May 25 - May 31 | Cost optimization, system security, Infrastructure as Code (IaC), CI/CD, and MLOps |
+| [**Week 7**](1.7-Week7/) | Jun 1 - Jun 7 | Research on Customer Behavior Analytics, dataset exploration, and Medallion Data Lakehouse architecture design |
+| [**Week 8**](1.8-Week8/) | Jun 8 - Jun 14 | Implementing the Ingestion Layer using Amazon API Gateway, AWS Lambda, Amazon Kinesis Data Firehose, and Amazon EventBridge Scheduler, with data stored in the Raw Layer on Amazon S3 |
+| [**Week 9**](1.9-Week9/) | Jun 15 - Jun 21 | Building the Bronze, Silver, and Gold layers using AWS Glue ETL, converting data to Apache Parquet, and managing metadata with the AWS Glue Data Catalog |
+| [**Week 10**](1.10-Week10/) | Jun 22 - Jun 28 | Implementing the Query Layer with Amazon Athena, developing a Streamlit dashboard, and deploying it on Amazon EC2 |
+| [**Week 11**](1.11-Week11/) | Jun 29 - Jul 5 | End-to-end integration testing of the Customer Behavior Analytics system, data validation, and optimization of data processing workflows |
+| [**Week 12**](1.12-Week12/) | Jul 6 - Jul 12 | Final system optimization, performance tuning, completion of technical documentation, and project acceptance for the Customer Behavior Analytics system on AWS |
 
-**Week 2**: [Database Management and Data Migration](1.2-Week2/)
-
-**Week 3**: [Building a Data Lake and Data Engineering](1.3-Week3/)
-
-**Week 4**: [Data Analytics and Business Intelligence (BI)](1.4-Week4/)
-
-**Week 5**: [AI/ML with Amazon SageMaker](1.5-Week5/)
-
-**Week 6**: [System Optimization, Security, and MLOps Operations](1.6-Week6/)
-
-**Week 7**: [Research on Customer Behavior Analytics and System Architecture Design](1.7-Week7/)
-
-**Week 8**: [Implementing the Ingestion Layer for the Data Lakehouse](1.8-Week8/)
-
-**Week 9**: [Implementing the Bronze, Silver, and Gold Layers in a Medallion Data Lakehouse Architecture](1.9-Week9/)
-
-**Week 10**: [Implementing the Query Layer and Dashboard for the Data Lakehouse](1.10-Week10/)
-
-**Week 11**: [Finalizing and End-to-End Testing of the Customer Behavior Analytics System](1.11-Week11/)
-
-**Week 12**: [Finalization, Optimization, and Project Acceptance of the Customer Behavior Analytics System on AWS](1.12-Week12/)
 
